@@ -1,0 +1,90 @@
+# Project: WowFish
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = WowFish_private.res
+OBJ      = Main.o audio/AudioManager.o audio/AudioRender.o audio/Log.o audio/PlaybackAudioCapture.o audio/Timer.o Robot.o AutoFish.o FFTClass.o qrencode/bitstream.o qrencode/mask.o qrencode/mmask.o qrencode/mqrspec.o qrencode/qrencode.o qrencode/qrinput.o qrencode/qrspec.o qrencode/rsecc.o qrencode/split.o tool/md5.o Config.o $(RES)
+LINKOBJ  = Main.o audio/AudioManager.o audio/AudioRender.o audio/Log.o audio/PlaybackAudioCapture.o audio/Timer.o Robot.o AutoFish.o FFTClass.o qrencode/bitstream.o qrencode/mask.o qrencode/mmask.o qrencode/mqrspec.o qrencode/qrencode.o qrencode/qrinput.o qrencode/qrspec.o qrencode/rsecc.o qrencode/split.o tool/md5.o Config.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows lib/avrt.dll lib/ole32.dll lib/libksuser.a lib/winmm.dll lib/winhttp.dll
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = WowFish.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o Main.o $(CXXFLAGS)
+
+audio/AudioManager.o: audio/AudioManager.cpp
+	$(CPP) -c audio/AudioManager.cpp -o audio/AudioManager.o $(CXXFLAGS)
+
+audio/AudioRender.o: audio/AudioRender.cpp
+	$(CPP) -c audio/AudioRender.cpp -o audio/AudioRender.o $(CXXFLAGS)
+
+audio/Log.o: audio/Log.cpp
+	$(CPP) -c audio/Log.cpp -o audio/Log.o $(CXXFLAGS)
+
+audio/PlaybackAudioCapture.o: audio/PlaybackAudioCapture.cpp
+	$(CPP) -c audio/PlaybackAudioCapture.cpp -o audio/PlaybackAudioCapture.o $(CXXFLAGS)
+
+audio/Timer.o: audio/Timer.cpp
+	$(CPP) -c audio/Timer.cpp -o audio/Timer.o $(CXXFLAGS)
+
+Robot.o: Robot.cpp
+	$(CPP) -c Robot.cpp -o Robot.o $(CXXFLAGS)
+
+AutoFish.o: AutoFish.cpp
+	$(CPP) -c AutoFish.cpp -o AutoFish.o $(CXXFLAGS)
+
+FFTClass.o: FFTClass.cpp
+	$(CPP) -c FFTClass.cpp -o FFTClass.o $(CXXFLAGS)
+
+qrencode/bitstream.o: qrencode/bitstream.c
+	$(CPP) -c qrencode/bitstream.c -o qrencode/bitstream.o $(CXXFLAGS)
+
+qrencode/mask.o: qrencode/mask.c
+	$(CPP) -c qrencode/mask.c -o qrencode/mask.o $(CXXFLAGS)
+
+qrencode/mmask.o: qrencode/mmask.c
+	$(CPP) -c qrencode/mmask.c -o qrencode/mmask.o $(CXXFLAGS)
+
+qrencode/mqrspec.o: qrencode/mqrspec.c
+	$(CPP) -c qrencode/mqrspec.c -o qrencode/mqrspec.o $(CXXFLAGS)
+
+qrencode/qrencode.o: qrencode/qrencode.c
+	$(CPP) -c qrencode/qrencode.c -o qrencode/qrencode.o $(CXXFLAGS)
+
+qrencode/qrinput.o: qrencode/qrinput.c
+	$(CPP) -c qrencode/qrinput.c -o qrencode/qrinput.o $(CXXFLAGS)
+
+qrencode/qrspec.o: qrencode/qrspec.c
+	$(CPP) -c qrencode/qrspec.c -o qrencode/qrspec.o $(CXXFLAGS)
+
+qrencode/rsecc.o: qrencode/rsecc.c
+	$(CPP) -c qrencode/rsecc.c -o qrencode/rsecc.o $(CXXFLAGS)
+
+qrencode/split.o: qrencode/split.c
+	$(CPP) -c qrencode/split.c -o qrencode/split.o $(CXXFLAGS)
+
+tool/md5.o: tool/md5.cpp
+	$(CPP) -c tool/md5.cpp -o tool/md5.o $(CXXFLAGS)
+
+Config.o: Config.cpp
+	$(CPP) -c Config.cpp -o Config.o $(CXXFLAGS)
+
+WowFish_private.res: WowFish_private.rc WowFish.rc
+	$(WINDRES) -i WowFish_private.rc --input-format=rc -o WowFish_private.res -O coff 
+

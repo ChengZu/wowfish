@@ -1,0 +1,15 @@
+#include "resource.h"
+
+
+IDI_BIG_ICON		ICON	DISCARDABLE			"big_icon.ico"
+IDI_SMALL_ICON		ICON	DISCARDABLE			"small_icon.ico"
+IDB_ALIPAY_BITMAP 	BITMAP 	DISCARDABLE 		"alipay.bmp"
+IDR_TIP_WAVE		WAVE	DISCARDABLE			"tip.wav"
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+   IDC_WOWFISH									"WOWFISH"
+   IDS_APP_TITLE								"魔兽世界自动钓鱼"
+   IDS_HELLO									"Hello World!"
+END

@@ -1,0 +1,42 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+#include "WowFish.rc"
+
+//
+// SUPPORT FOR WINDOWS XP THEMES:
+// THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
+// LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
+//
+1 24 "WowFish.exe.Manifest"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,1,0,0
+PRODUCTVERSION 1,1,0,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "080404E4"
+    {
+      VALUE "CompanyName", "ChengZu"
+      VALUE "FileVersion", "1.1.0.0"
+      VALUE "FileDescription", "魔兽世界辅助工具"
+      VALUE "InternalName", "ChengZu"
+      VALUE "LegalCopyright", "ChengZu"
+      VALUE "LegalTrademarks", "ChengZu"
+      VALUE "OriginalFilename", "WowFish"
+      VALUE "ProductName", "魔兽世界自动钓鱼"
+      VALUE "ProductVersion", "1.1.0.0"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0804, 1252
+  }
+}
