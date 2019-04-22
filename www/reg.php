@@ -8,10 +8,10 @@ $time=time()+24*60*60;
 $ip = $_SERVER['REMOTE_ADDR'];
 
 $mysql_conf = array(
-    'host'    => 'sql310.epizy.com:3306', 
-    'db'      => 'epiz_22444804_wowfish', 
-    'db_user' => 'epiz_22444804', 
-    'db_pwd'  => '6354050', 
+    'host'    => 'localhost:3306', 
+    'db'      => 'database_wowfish', 
+    'db_user' => 'user_wowfish', 
+    'db_pwd'  => 'user_wowfish_pwd', 
     );
 
 $mysqli = @new mysqli($mysql_conf['host'], $mysql_conf['db_user'], $mysql_conf['db_pwd']);
