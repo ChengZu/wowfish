@@ -10,6 +10,14 @@
 
 ![howtouse](./image/howtouse.jpg)
 
+	2.1 Run this program, login to the game
+	
+	2.2 Put the fishing skills on 2 skill bars, throw out the fishing rod and start fishing.
+	
+	2.3 Put the mouse on the float, press Ctrl + A to pick up the color, press F11 to start the automatic fishing, and then you can do something else.
+	
+	
+	
 	2.1 运行本程序，登录游戏
 	
 	2.2 将钓鱼技能放2技能栏上，抛出鱼竿开始钓鱼
