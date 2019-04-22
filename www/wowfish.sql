@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `epiz_22444804_wowfish`
+-- Database: `database_wowfish`
 --
 
 -- --------------------------------------------------------
