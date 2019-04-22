@@ -1,1 +1,1 @@
-simple server example thant can run this program
+simple server example that can run this program
