@@ -2,9 +2,9 @@
 
 1.How to Compile
 
-  Use devc++4.9+
+	Use devc++4.9+
   
-  download devc++(https://bloodshed-dev-c.en.softonic.com/)
+	download devc++(https://bloodshed-dev-c.en.softonic.com/)
   
 2.How to use this software
 
@@ -16,8 +16,7 @@
 	
 	2.3 Put the mouse on the float, press Ctrl + A to pick up the color, press F11 to start the automatic fishing, and then you can do something else.
 	
-	
-	
+	中文
 	2.1 运行本程序，登录游戏
 	
 	2.2 将钓鱼技能放2技能栏上，抛出鱼竿开始钓鱼
