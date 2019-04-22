@@ -2,7 +2,7 @@
 -- version 3.5.8.2
 -- http://www.phpmyadmin.net
 --
--- Host: sql310.epizy.com
+-- Host: localhost
 -- Generation Time: Apr 06, 2019 at 06:09 AM
 -- Server version: 5.6.41-84.1
 -- PHP Version: 5.3.3
