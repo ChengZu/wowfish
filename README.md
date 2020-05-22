@@ -8,7 +8,7 @@
   
 2.How to use this software
 
-![howtouse](./image/howtouse.jpg)
+![howtouse](https://github.com/ChengZu/wowfish/blob/master/image/howtouse.jpg)
 
 	2.1 Run this program, login to the game
 	
@@ -27,7 +27,7 @@
 
       声音录制掉帧
       
-      声音识别数据和音量大小也相关
+      声音识别数据和音量大小也相关(好像是20的音量)
       
 
 
