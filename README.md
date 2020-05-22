@@ -8,7 +8,7 @@
   
 2.How to use this software
 
-![howtouse](https://github.com/ChengZu/wowfish/blob/master/image/howtouse.jpg)
+![howtouse](./image/howtouse.jpg)
 
 	2.1 Run this program, login to the game
 	
